@@ -8,13 +8,11 @@ import java.util.Set;
 
 public class Day1_02 {
 
-	public static void main(String[] args) throws FileNotFoundException  {
-
+	public static void main(String[] args) throws FileNotFoundException {
 		System.out.println(foundTheDuplicate());
-
 	}
-
-	public static int foundTheDuplicate() throws FileNotFoundException{
+	
+	public static int foundTheDuplicate() throws FileNotFoundException {
 
 		Set<Integer> seenfrequencies = new HashSet<>();
 		int frequency = 0;
@@ -29,16 +27,12 @@ public class Day1_02 {
 				if(seenfrequencies.contains(frequency)) {
 					sc.close();
 					return frequency;	
-
 				}
 				seenfrequencies.add(frequency);
-
 			}
 
 			sc.close();
 		}
-
-
 	}
 }
 
